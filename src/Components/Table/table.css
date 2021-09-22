@@ -1,0 +1,51 @@
+.table__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.table__row-dark {
+  background-color: #e8edf1;
+}
+
+.table__cell-header {
+  color: #fffffe;
+  background-color: #1890ff;
+  transition: linear 0.3s;
+}
+
+.table__cell-header:hover {
+  cursor: pointer;
+  background-color: #0d6fca;
+}
+
+.table__head-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.table__row {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgb(206, 206, 206);
+  transition: linear 0.3s;
+}
+
+.table__row:hover {
+  cursor: pointer;
+  background-color: rgb(180, 212, 255);
+}
+
+.table__cell {
+  width: 15%;
+  min-width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table__cell-email {
+  width: 25%;
+  min-width: 250px;
+}

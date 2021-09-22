@@ -1,0 +1,10 @@
+.profile__wrapper {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 5px 5px rgb(238, 238, 238);
+  margin-bottom: 50px;
+  padding: 50px;
+  gap: 10px;
+}

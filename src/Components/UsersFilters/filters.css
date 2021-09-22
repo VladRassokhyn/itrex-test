@@ -1,0 +1,21 @@
+.filters__wrapper {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.filters__wrapper input {
+  width: 40%;
+  height: 40px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(206, 206, 206);
+  font-size: 16pt;
+}
+
+.filters__selector {
+  width: 40%;
+}
