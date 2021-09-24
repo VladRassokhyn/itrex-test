@@ -5,7 +5,8 @@ export const selectUsers = (state: RootState) => {
   const perPage = state.users.perPage;
   const start = page * perPage - perPage;
   const end = start + perPage;
-  return state.users.users?.slice(start, end);
+  const users = state.users.users?.filter((user) => user.show);
+  return users?.slice(start, end);
 };
 
 export const selectUsersStatuses = (state: RootState) => ({

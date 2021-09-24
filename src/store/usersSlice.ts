@@ -101,6 +101,7 @@ const usersSlice = createSlice({
       });
     },
     usersFiltered(state, action) {
+      let count = 0;
       state.users?.forEach((user) => {
         const name = user.firstName.toUpperCase();
         if (
@@ -108,11 +109,13 @@ const usersSlice = createSlice({
           action.payload.states.includes(user.adress.state)
         ) {
           user.show = true;
+          count++;
         } else {
           user.show = false;
         }
       });
       state.users?.sort((a, b) => Number(b.show) - Number(a.show));
+      state.totalItems = count;
     },
   },
   extraReducers: {
